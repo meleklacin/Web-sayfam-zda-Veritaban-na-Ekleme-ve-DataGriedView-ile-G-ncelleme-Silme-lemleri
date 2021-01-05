@@ -31,6 +31,7 @@
              <SortedDescendingCellStyle BackColor="#FFFDF8" />
              <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
          </asp:GridView>
+       //Silme ve Güncelleme islemleri
          <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:loginConnectionString4 %>" DeleteCommand="DELETE FROM [musteriler] WHERE [MusteriNo] = @MusteriNo" InsertCommand="INSERT INTO [musteriler] ([MusteriAdı], [FirmaSahibiAdı], [FirmaTelefon], [Ürün], [Pasaport]) VALUES (@MusteriAdı, @FirmaSahibiAdı, @FirmaTelefon, @Ürün, @Pasaport)" ProviderName="<%$ ConnectionStrings:loginConnectionString4.ProviderName %>" SelectCommand="SELECT [MusteriNo], [MusteriAdı], [FirmaSahibiAdı], [FirmaTelefon], [Ürün], [Pasaport] FROM [musteriler]" UpdateCommand="UPDATE [musteriler] SET [MusteriAdı] = @MusteriAdı, [FirmaSahibiAdı] = @FirmaSahibiAdı, [FirmaTelefon] = @FirmaTelefon, [Ürün] = @Ürün, [Pasaport] = @Pasaport WHERE [MusteriNo] = @MusteriNo">
              <DeleteParameters>
                  <asp:Parameter Name="MusteriNo" Type="Int32" />
