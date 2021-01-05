@@ -14,15 +14,7 @@ namespace CRMDeneme
         protected void Page_Load(object sender, EventArgs e)
         {
             div.Visible = false;
-            //Session["Deger"] = "2";
-
-         /*   if (Session["Deger"].ToString() == "2")
-            {
-                GridView1.Columns[0].Visible = false;
-                GridView1.Columns[1].Visible = false;
-                Button3.Visible = false;
-            }
-            */
+         
 
         }
 
@@ -34,7 +26,7 @@ namespace CRMDeneme
 
         }
         protected void Button4_Click(object sender, EventArgs e)
-        {
+        {//EKLEME ISLEMI
                 string mAdi = TextBox1.Text;
                 string fSadi = TextBox2.Text;
                 int FTelefon = Convert.ToInt32(TextBox3.Text);
